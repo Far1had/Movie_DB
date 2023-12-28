@@ -6,79 +6,35 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekte-Level-3_22</title>
+
 </head>
 
 <body>
-    <section>
-        <div class="h1Div">
-            <h1>Movies for You</h1>
-            <h4>the best MovieDB</h4>
-        </div>
+    <main>
+        <section>
+            <div class="h1Div">
+                <h1>Movies for You</h1>
+                <h4>the best MovieDB</h4>
+            </div>
 
-        <form>
-            <input class="input" type="text" placeholder="  name your Mov.....">
-            <input class="btnSearch" type="submit" value="  Search  ">
-        </form>
+            <form>
+                <input class="input" type="text" placeholder="  name your Movie.....">
+                <input class="btnSearch" type="submit" value="  Search  ">
+            </form>
 
-        <div class="sortDiv">
-            <button class="btn3" id="yearUp">Year up</button>
-            <button class="btn3" id="yearDown">Year down</button>
-            <button class="btn3" id="bestRate">Best Rate</button>
-        </div>
-    </section>
-
-    <section id="movieOutput">
-
-    </section>
-
+            <div class="sortDiv">
+                <button class="btn3" id="yearUp">Year up</button>
+                <button class="btn3" id="yearDown">Year down</button>
+                <button class="btn3" id="bestRate">Best Rate</button>
+            </div>
+        </section>
+        
+    </main>
 
 
+         <div id="movieOutput" class="flex-container">
 
-
-
-    <br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-
-
-    <h1>🚥 👉🏼 hier ensteht eine neue Webseite.🎈</h1>
-    <p># Movie Database Exercise
-
-        **Design 2024 by Farhad Amini**
-
-        ## Aufgabenstellung
-
-        In dieser Übung wirst du eine Movie Datenbank mithilfe von JavaScript erstellen, sortieren und filtern. Für
-        diese Aufgabe benötigst Du möglicherweise die folgenden Methoden: `sort()`, `filter()`, `forEach()`, `map()`.
-
-        Das Movie-Array ist vorgegeben (siehe Code-Snippet).
-
-        ## Bonus
-
-        - Erstelle die Genres mit Hilfe von einem zweiten Array Loop.
-        - Erweitere dein Design für eine bessere Benutzererfahrung.
-        - Erweitere deine Datenbank um beliebige weitere Funktionen, diese könnten z.B. sein:
-        - Filter nach Genre
-        - Ansicht für "Film nicht gefunden"
-        - Suche nach Jahr
-        - Möglichkeit einen neuen Film hinzuzufügen
-
-        ## Movie-Array
-
-        ```javascript
-        const movies = [
-        {
-        title: "Inception",
-        year: 2010,
-        genre: "Sci-Fi",
-        },
-        {
-        title: "The Shawshank Redemption",
-        year: 1994,
-        genre: "Drama",
-        },
-        // ... weitere Filme nach Bedarf hinzufügen
-        ];
-    </p>
+         </div>
 
     <script src="./assets/js/mainDB.js"></script>
     <script src="./assets/js/main.js"></script>

@@ -7,19 +7,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: ;
     font-family: inter;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     height: 0;
     margin: 5%;
     background: rgb(240, 236, 236);
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section {
@@ -34,7 +37,6 @@ section {
     gap: 15px;
     align-items: center;
     font-weight: bold;
-
 }
 
 h1 {
@@ -46,23 +48,29 @@ h4 {
 }
 
 .input {
-    border-radius: 50px;
+    border-radius: 9px;
     border: none;
     height: 25px;
     width: 258px;
 }
 
 .btnSearch {
-    border-radius: 50px;
+    border-radius: 9px;
     border: none;
     width: 125px;
     height: 25px;
     background-color: orange;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnSearch:hover {
+    background-color: green;
 }
 
 .btn3 {
-    border-radius: 50px;
+    border-radius: 9px;
     border: none;
     width: 130px;
     height: 25px;
@@ -70,6 +78,17 @@ h4 {
     background-color: rgb(240, 236, 236);
     border: 1px solid orange;
     font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.btn3:hover {
+    background-color: green;
+    color: white;
+    border: none;
+
+
 }
 
 .sortDiv {
@@ -77,26 +96,43 @@ h4 {
     justify-content: space-between;
 }
 
-.divStyle {
-    width: 7%;
-    height: 7%;
-    background-color: coral;
-}
 
-#movies {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#movieOutput {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 8px;
+    padding: 16px;
 }
 
 .movieOutput {
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    background-color: greenyellow;
+    background-color: rgb(219, 226, 116);
     border-radius: 9px;
-    padding: 1px;
-    gap: 5px;
+    border: 2px solid black;
+    padding: 1em;
+    gap: 10px;
+    margin-right: 10px;
+    
+}
+
+
+
+
+
+h2 {
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 0.6em;
+}
+
+h4 {
+    font-size: 0.8em;
+    font-weight: bold;
 }
