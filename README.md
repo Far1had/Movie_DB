@@ -35,4 +35,4 @@ const movies = [
   // ... weitere Filme nach Bedarf hinzufügen
 ];
 
-## WEB: https://far1had.github.io/Movie_DB/
+## WEB: [Movie Database](https://far1had.github.io/Movie_DB/)
