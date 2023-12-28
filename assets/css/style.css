@@ -3,13 +3,100 @@
     src: url(../fonts/Inter/static/Inter-Regular.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inter;
+}
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     height: 0;
-    margin: 20%;
-    transition: background 0.5s;
-    font-family: inter;
+    margin: 5%;
+    background: rgb(240, 236, 236);
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h1Div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.input {
+    border-radius: 50px;
+    border: none;
+    height: 25px;
+    width: 258px;
+}
+
+.btnSearch {
+    border-radius: 50px;
+    border: none;
+    width: 125px;
+    height: 25px;
+    background-color: orange;
+    color: white;
+}
+
+.btn3 {
+    border-radius: 50px;
+    border: none;
+    width: 130px;
+    height: 25px;
+    font-size: 0.9em;
+    background-color: rgb(240, 236, 236);
+    border: 1px solid orange;
+    font-weight: bolder;
+}
+
+.sortDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divStyle {
+    width: 7%;
+    height: 7%;
+    background-color: coral;
+}
+
+#movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movieOutput {
+    width: 250px;
+    height: 200px;
+    flex-direction: column;
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 9px;
+    display: flex;
+    padding: 1px;
+    gap: 5px;
 }
