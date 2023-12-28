@@ -92,11 +92,11 @@ h4 {
 .movieOutput {
     width: 250px;
     height: 200px;
+    display: flex;
     flex-direction: column;
     text-align: center;
     background-color: greenyellow;
     border-radius: 9px;
-    display: flex;
     padding: 1px;
     gap: 5px;
 }
