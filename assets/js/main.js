@@ -109,6 +109,21 @@ function closeAddMovieModal() {
     document.getElementById('addMovieModal').style.display = 'none';
 }
 
+// Function to open the Delete Movie modal
+function openDeleteMovieModal() {
+    const deleteMovieModal = document.getElementById('deleteMovieModal');
+    if (deleteMovieModal) {
+        deleteMovieModal.style.display = 'block';
+    }
+}
+
+// Function to close the Delete Movie modal
+function closeDeleteMovieModal() {
+    const deleteMovieModal = document.getElementById('deleteMovieModal');
+    if (deleteMovieModal) {
+        deleteMovieModal.style.display = 'none';
+    }
+}
 
 // Event listeners for opening and closing modals
 document.getElementById('btnAddMovie').addEventListener('click', openAddMovieModal);
