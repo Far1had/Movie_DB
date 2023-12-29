@@ -210,7 +210,7 @@ h4 {
     }
 
     .btn3 {
-        width: 90px;
+        width: 95px;
         height: 20px;
     }
 
@@ -232,7 +232,7 @@ h4 {
     }
 }
 
-addMovieDiv @media only screen and (min-width: 768px) {
+addMovieDiv @media only screen and (min-width: 761px) {
     html {
         font-size: 16px;
     }
