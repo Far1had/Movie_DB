@@ -9,25 +9,25 @@ const bestRateButton = document.getElementById('bestRate');
 
 // Funktion zum Rendern der Filme
 function renderMovies(movieArray) {
-    movieOutput.innerHTML = '';       // Leere den aktuellen Inhalt//
+    movieOutput.innerHTML = '';
     movieArray.forEach(movie => {
-        const [title, year, director, duration, genres, rating] = movie;    // Iteriere durch den Film-Array und erstelle für jeden Film ein HTML-Element
+        const [title, year, director, duration, genres, rating] = movie;
+        
+        // Überprüfe, ob das genres-Array vorhanden ist, bevor du darauf zugreifst
+        const genresText = genres ? genres.join(', ') : 'N/A';
 
-        // Erstelle div für das ausgabe Movie-Element
         const movieElement = document.createElement('div');
         movieElement.classList.add('movieOutput');
 
-        // Fülle das Element mit Informationen
         movieElement.innerHTML = `
             <h2>${title}</h2>
             <p>Year: ${year}</p> 
             <h4>Director: ${director}</h4>
             <p>Duration: ${duration}</p>
-            <p>Genres: ${genres.join(', ')}</p>
+            <p>Genres: ${genresText}</p>
             <p>Rating: ${rating}</p>
         `;
 
-        // Füge das Movie-Element zum Movie Output Container hinzu
         movieOutput.appendChild(movieElement);
     });
 }
@@ -97,6 +97,66 @@ function deleteMovie(index) {
     // Rendere die aktualisierte Liste der Filme
     renderMovies(movies);
 }
+// In main.js
 
+// Function to open the Add Movie modal
+function openAddMovieModal() {
+    document.getElementById('addMovieModal').style.display = 'block';
+}
+
+// Function to close the Add Movie modal
+function closeAddMovieModal() {
+    document.getElementById('addMovieModal').style.display = 'none';
+}
+
+
+// Event listeners for opening and closing modals
+document.getElementById('btnAddMovie').addEventListener('click', openAddMovieModal);
+document.getElementById('closeAddMovieModal').addEventListener('click', closeAddMovieModal);
+
+document.getElementById('btnDeleteMovie').addEventListener('click', openDeleteMovieModal);
+document.getElementById('closeDeleteMovieModal').addEventListener('click', closeDeleteMovieModal);
+
+// In main.js
+
+// Function to open a modal by ID
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
+}
+
+// Function to close a modal by ID
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
+
+// Event listeners for opening and closing modals
+document.getElementById('btnAddMovie').addEventListener('click', () => openModal('addMovieModal'));
+document.getElementById('closeAddMovieModal').addEventListener('click', () => closeModal('addMovieModal'));
+
+document.getElementById('btnDeleteMovie').addEventListener('click', () => openModal('deleteMovieModal'));
+document.getElementById('closeDeleteMovieModal').addEventListener('click', () => closeModal('deleteMovieModal'));
+
+// In main.js
+
+// Event listener for the form submission in the add movie modal
+document.getElementById('addMovieForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // Sammle Informationen zum neuen Film
+    const title = document.getElementById('title').value;
+    const year = parseInt(document.getElementById('year').value);
+    const director = document.getElementById('director').value;
+
+    // Weitere Informationen nach Bedarf sammeln
+
+    // Füge den neuen Film zum movies Array hinzu
+    movies.push([title, year, director]);
+
+    // Rufe die renderMovies Funktion auf, um die Aktualisierung anzuzeigen
+    renderMovies(movies);
+
+    // Schließe das Modal
+    closeModal('addMovieModal');
+});
 
 

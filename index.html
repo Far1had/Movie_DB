@@ -28,16 +28,77 @@
                 <button class="btn3" id="bestRate">Best Rate</button>
             </div>
         </section>
-        
+        <div class="addMovieDiv">
+            <h3>Manage-  🎥 -Movies</h3>
+            <button class="btnAdd" id="btnAddMovie">Add Movie</button>
+            <button class="btnDelete" id="btnDeleteMovie">Delete Movie</button>
+        </div>
+
+
+
     </main>
 
+    <div id="addMovieModal" class="modal">
+        <div class="modal-content">
+            <span id="closeAddMovieModal" class="close">&times;</span>
+            <h2>Add a Movie</h2>
+            <form id="addMovieForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
 
-         <div id="movieOutput" class="flex-container">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
 
-         </div>
+                <label for="director">Director:</label>
+                <input type="text" id="director" name="director" required>
+
+                <input class="btnAdd" type="submit" value="Add Movie">
+            </form>
+        </div>
+    </div>
+
+
+    <div id="movieOutput" class="flex-container">
+
+
+    </div>
 
     <script src="./assets/js/mainDB.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addMovieForm = document.getElementById('addMovieForm');
+            const closeAddMovieModal = document.getElementById('closeAddMovieModal');
+
+            addMovieForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const title = document.getElementById('title').value;
+                const year = parseInt(document.getElementById('year').value);
+                const director = document.getElementById('director').value;
+
+                console.log('Title:', title);
+                console.log('Year:', year);
+                console.log('Director:', director);
+
+                movies.push([title, year, director]);
+
+                console.log('Movies array after adding:', movies);
+
+                renderMovies(movies);
+
+                closeModal('addMovieModal');
+            });
+
+            closeAddMovieModal.addEventListener('click', function () {
+                closeModal('addMovieModal');
+            });
+
+
+        });
+
+    </script>
 </body>
 
 </html>
