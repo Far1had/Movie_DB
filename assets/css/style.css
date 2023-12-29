@@ -249,7 +249,7 @@ addMovieDiv @media only screen and (min-width: 761px) {
 
     .input {
         height: 23px;
-        width: 228px;
+        width: 200px;
     }
 
     .btnAdd {
@@ -269,18 +269,18 @@ addMovieDiv @media only screen and (min-width: 761px) {
     }
 
     .btnSearch {
-        width: 100px;
+        width: 110px;
         height: 25px;
     }
 
     .btn3 {
-        width: 100px;
+        width: 120px;
         height: 25px;
     }
 
     .input {
         height: 25px;
-        width: 248px;
+        width: 250px;
     }
 
     .btnAdd {
