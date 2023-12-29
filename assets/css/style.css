@@ -216,7 +216,7 @@ h4 {
 
     .input {
         height: 20px;
-        width: 170px;
+        width: 160px;
     }
 
     .btnAdd {
@@ -238,12 +238,12 @@ addMovieDiv @media only screen and (min-width: 761px) {
     }
 
     .btnSearch {
-        width: 95px;
+        width: 100px;
         height: 23px;
     }
 
     .btn3 {
-        width: 90px;
+        width: 100px;
         height: 23px;
     }
 
