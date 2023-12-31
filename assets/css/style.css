@@ -339,6 +339,11 @@ section {
         width: 130%;
         height: 200%;
     }
+    .addAmovie {
+        font-size: 1.2em;
+        margin-bottom: 15%;
+    }
+    
 }
 
 @media only screen and (min-width: 761px) {
