@@ -225,6 +225,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .addAmovie {
@@ -335,7 +336,7 @@ section {
         font-size: 0.8em;
     }
     .modal {
-        width: 100%;
+        width: 130%;
         height: 200%;
     }
 }
