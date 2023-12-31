@@ -1,11 +1,11 @@
-const movies = [
+let movies = [
   [
       'The Shawshank Redemption',
       '1994',
       'Frank Darabont',
       '2h 22min',
       ['Crime', 'Drama'],
-      '9.3'
+      '9.3 ⭐️⭐️⭐️⭐️⭐️'
   ],
   [
       'The Godfather',
@@ -13,7 +13,7 @@ const movies = [
       'Francis Ford Coppola',
       '2h 55min',
       ['Crime', 'Drama'],
-      '9.2'
+      '9.2 ⭐️⭐️⭐️⭐️⭐️'
   ],
   [
       'The Godfather: Part II',
@@ -21,7 +21,7 @@ const movies = [
       'Francis Ford Coppola',
       '3h 22min',
       ['Crime', 'Drama'],
-      '9.0'
+      '9.0 ⭐️⭐️⭐️⭐️⭐️'
   ],
   [
       'The Dark Knight',
@@ -29,7 +29,7 @@ const movies = [
       'Christopher Nolan',
       '2h 32min',
       ['Action', 'Crime', 'Drama', 'Thriller'],
-      '9.0'
+      '9.0⭐️⭐️⭐️⭐️⭐️'
   ],
   [
       '12 Angry Men',
@@ -37,7 +37,7 @@ const movies = [
       'Sidney Lumet',
       '1h 36min',
       ['Crime', 'Drama'],
-      '8.9'
+      '8.9⭐️⭐️⭐️⭐️'
   ],
   [
       'Schindler\'s List',
@@ -53,15 +53,15 @@ const movies = [
       'Quentin Tarantino',
       '2h 34min',
       ['Crime', 'Drama'],
-      '8.9'
+      '8.99⭐️⭐️⭐️⭐️'
   ],
   [
-      'The Lord of the Rings: The Return of the King',
+      'The Lord of the Rings:<br> The Return of the King',
       '2003',
       'Peter Jackson',
       '3h 21min',
       ['Adventure', 'Drama', 'Fantasy'],
-      '8.9'
+      '8.99⭐️⭐️⭐️⭐️'
   ],
   [
       'Il buono, il brutto, il cattivo',
@@ -69,7 +69,7 @@ const movies = [
       'Sergio Leone',
       '3h 2min',
       ['Western'],
-      '8.9'
+      '8.99⭐️⭐️⭐️⭐️'
   ],
   [
       'Fight Club',
@@ -77,15 +77,15 @@ const movies = [
       'David Fincher',
       '2h 19min',
       ['Drama'],
-      '8.8'
+      '8.89⭐️⭐️⭐️⭐️'
   ],
   [
-      'The Lord of the Rings: The Fellowship of the Ring',
+      'The Lord of the Rings:<br>The Fellowship of the Ring',
       '2001',
       'Peter Jackson',
       '2h 58min',
       ['Adventure', 'Drama', 'Fantasy'],
-      '8.8'
+      '8.89⭐️⭐️⭐️⭐️'
   ],
   [
       'Forrest Gump',
@@ -93,7 +93,7 @@ const movies = [
       'Robert Zemeckis',
       '2h 22min',
       ['Comedy', 'Drama', 'Romance'],
-      '8.8'
+      '8.89⭐️⭐️⭐️⭐️'
   ],
   [
       'Star Wars: Episode V - The Empire Strikes Back',
@@ -101,7 +101,7 @@ const movies = [
       'Irvin Kershner',
       '2h 4min',
       ['Action', 'Adventure', 'Fantasy', 'Sci-Fi'],
-      '8.8'
+      '8.89⭐️⭐️⭐️⭐️'
   ],
   [
       'Inception',
@@ -109,15 +109,15 @@ const movies = [
       'Christopher Nolan',
       '2h 28min',
       ['Action', 'Adventure', 'Sci-Fi', 'Thriller'],
-      '8.8'
+      '8.89⭐️⭐️⭐️⭐️'
   ],
   [
-      'The Lord of the Rings: The Two Towers',
+      'The Lord of the Rings:<br>The Two Towers',
       '2002',
       'Peter Jackson',
       '2h 59min',
       ['Adventure', 'Drama', 'Fantasy'],
-      '8.7'
+      '8.79⭐️⭐️⭐️⭐️'
   ],
   [
       'One Flew Over the Cuckoo\'s Nest',
@@ -133,7 +133,7 @@ const movies = [
       'Martin Scorsese',
       '2h 26min',
       ['Crime', 'Drama'],
-      '8.7'
+      '8.79⭐️⭐️⭐️⭐️'
   ],
   [
       'The Matrix',
@@ -141,7 +141,7 @@ const movies = [
       'Lana Wachowski',
       '2h 16min',
       ['Action', 'Sci-Fi'],
-      '8.7'
+      '8.79⭐️⭐️⭐️⭐️'
   ],
   [
       'Shichinin no samurai',
@@ -157,7 +157,7 @@ const movies = [
       'George Lucas',
       '2h 1min',
       ['Action', 'Adventure', 'Fantasy', 'Sci-Fi'],
-      '8.7'
+      '8.79⭐️⭐️⭐️⭐️'
   ],
   [
       'Cidade de Deus',
@@ -165,7 +165,7 @@ const movies = [
       'Fernando Meirelles',
       '2h 10min',
       ['Crime', 'Drama'],
-      '8.7'
+      '8.79⭐️⭐️⭐️⭐️'
   ],
   [
       'Se7en',
@@ -173,7 +173,7 @@ const movies = [
       'David Fincher',
       '2h 7min',
       ['Crime', 'Drama', 'Mystery', 'Thriller'],
-      '8.6'
+      '8.69⭐️⭐️⭐️⭐️'
   ],
   [
       'The Silence of the Lambs',
@@ -181,7 +181,7 @@ const movies = [
       'Jonathan Demme',
       '1h 58min',
       ['Crime', 'Drama', 'Thriller'],
-      '8.6'
+      '8.69⭐️⭐️⭐️⭐️'
   ],
   [
       'It\'s a Wonderful Life',
@@ -189,7 +189,7 @@ const movies = [
       'Frank Capra',
       '2h 10min',
       ['Drama', 'Family', 'Fantasy'],
-      '8.6'
+      '8.69⭐️⭐️⭐️⭐️'
   ],
   [
       'La vita è bella',
@@ -197,7 +197,7 @@ const movies = [
       'Roberto Benigni',
       '1h 56min',
       ['Comedy', 'Drama', 'War'],
-      '8.6'
+      '8.69⭐️⭐️⭐️⭐️'
   ],
   [
       'The Usual Suspects',
@@ -205,7 +205,7 @@ const movies = [
       'Bryan Singer',
       '1h 46min',
       ['Crime', 'Drama', 'Mystery', 'Thriller'],
-      '8.6'
+      '8.669⭐️⭐️⭐️⭐️'
   ],
   [
       'Léon',
@@ -213,7 +213,7 @@ const movies = [
       'Luc Besson',
       '1h 50min',
       ['Crime', 'Drama', 'Thriller'],
-      '8.6'
+      '8.669⭐️⭐️⭐️⭐️'
   ],
   [
       'Saving Private Ryan',
@@ -221,7 +221,7 @@ const movies = [
       'Steven Spielberg',
       '2h 49min',
       ['Drama', 'War'],
-      '8.6'
+      '8.669⭐️⭐️⭐️⭐️'
   ],
   [
       'Sen to Chihiro no kamikakushi',
@@ -229,7 +229,7 @@ const movies = [
       'Hayao Miyazaki',
       '2h 5min',
       ['Animation', 'Adventure', 'Family', 'Fantasy', 'Mystery'],
-      '8.6'
+      '8.669⭐️⭐️⭐️⭐️'
   ],
   [
       'American History X',
@@ -237,7 +237,7 @@ const movies = [
       'Tony Kaye',
       '1h 59min',
       ['Crime', 'Drama'],
-      '8.5'
+      '8.569⭐️⭐️⭐️⭐️'
   ],
   [
       'C\'era una volta il West',
@@ -245,7 +245,7 @@ const movies = [
       'Sergio Leone',
       '2h 44min',
       ['Western'],
-      '8.6'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Interstellar',
@@ -253,7 +253,7 @@ const movies = [
       'Christopher Nolan',
       '2h 49min',
       ['Adventure', 'Drama', 'Sci-Fi'],
-      '8.6'
+      '8.669⭐️⭐️⭐️⭐️'
   ],
   [
       'Psycho',
@@ -261,7 +261,7 @@ const movies = [
       'Alfred Hitchcock',
       '1h 49min',
       ['Horror', 'Mystery', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'The Green Mile',
@@ -269,7 +269,7 @@ const movies = [
       'Frank Darabont',
       '3h 9min',
       ['Crime', 'Drama', 'Fantasy', 'Mystery'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Casablanca',
@@ -277,7 +277,7 @@ const movies = [
       'Michael Curtiz',
       '1h 42min',
       ['Drama', 'Romance', 'War'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'City Lights',
@@ -285,7 +285,7 @@ const movies = [
       'Charles Chaplin',
       '1h 27min',
       ['Comedy', 'Drama', 'Romance'],
-      '8.6'
+      '8.6⭐️⭐️⭐️'
   ],
   [
       'Intouchables',
@@ -293,7 +293,7 @@ const movies = [
       'Olivier Nakache',
       '1h 52min',
       ['Biography', 'Comedy', 'Drama'],
-      '8.6'
+      '8.6⭐️⭐️⭐️'
   ],
   [
       'Modern Times',
@@ -301,7 +301,7 @@ const movies = [
       'Charles Chaplin',
       '1h 27min',
       ['Comedy', 'Drama', 'Family', 'Romance'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Raiders of the Lost Ark',
@@ -309,7 +309,7 @@ const movies = [
       'Steven Spielberg',
       '1h 55min',
       ['Action', 'Adventure'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'The Pianist',
@@ -317,7 +317,7 @@ const movies = [
       'Roman Polanski',
       '2h 30min',
       ['Biography', 'Drama', 'Music', 'War'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'The Departed',
@@ -325,7 +325,7 @@ const movies = [
       'Martin Scorsese',
       '2h 31min',
       ['Crime', 'Drama', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Rear Window',
@@ -333,7 +333,7 @@ const movies = [
       'Alfred Hitchcock',
       '1h 52min',
       ['Mystery', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Terminator 2: Judgment Day',
@@ -341,7 +341,7 @@ const movies = [
       'James Cameron',
       '2h 17min',
       ['Action', 'Sci-Fi', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Back to the Future',
@@ -349,7 +349,7 @@ const movies = [
       'Robert Zemeckis',
       '1h 56min',
       ['Adventure', 'Comedy', 'Sci-Fi'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Whiplash',
@@ -357,7 +357,7 @@ const movies = [
       'Damien Chazelle',
       '1h 47min',
       ['Drama', 'Music'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Gladiator',
@@ -365,7 +365,7 @@ const movies = [
       'Ridley Scott',
       '2h 35min',
       ['Action', 'Adventure', 'Drama'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'The Prestige',
@@ -373,7 +373,7 @@ const movies = [
       'Christopher Nolan',
       '2h 10min',
       ['Drama', 'Mystery', 'Sci-Fi', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'The Lion King',
@@ -381,7 +381,7 @@ const movies = [
       'Roger Allers',
       '1h 28min',
       ['Animation', 'Adventure', 'Drama', 'Family', 'Musical'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Memento',
@@ -389,7 +389,7 @@ const movies = [
       'Christopher Nolan',
       '1h 53min',
       ['Mystery', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Apocalypse Now',
@@ -397,7 +397,7 @@ const movies = [
       'Francis Ford Coppola',
       '2h 27min',
       ['Drama', 'War'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Alien',
@@ -405,7 +405,7 @@ const movies = [
       'Ridley Scott',
       '1h 57min',
       ['Horror', 'Sci-Fi'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'The Great Dictator',
@@ -413,7 +413,7 @@ const movies = [
       'Charles Chaplin',
       '2h 5min',
       ['Comedy', 'Drama', 'War'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Sunset Blvd.',
@@ -421,7 +421,7 @@ const movies = [
       'Billy Wilder',
       '1h 50min',
       ['Drama', 'Film-Noir'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb',
@@ -429,7 +429,7 @@ const movies = [
       'Stanley Kubrick',
       '1h 35min',
       ['Comedy'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Nuovo Cinema Paradiso',
@@ -437,7 +437,7 @@ const movies = [
       'Giuseppe Tornatore',
       '2h 35min',
       ['Drama'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Das Leben der Anderen',
@@ -445,7 +445,7 @@ const movies = [
       'Florian Henckel von Donnersmarck',
       '2h 17min',
       ['Drama', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Hotaru no haka',
@@ -453,7 +453,7 @@ const movies = [
       'Isao Takahata',
       '1h 29min',
       ['Animation', 'Drama', 'War'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Blade Runner 2049',
@@ -461,7 +461,7 @@ const movies = [
       'Denis Villeneuve',
       '2h 44min',
       ['Mystery', 'Sci-Fi', 'Thriller'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Paths of Glory',
@@ -469,7 +469,7 @@ const movies = [
       'Stanley Kubrick',
       '1h 28min',
       ['Drama', 'War'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Django Unchained',
@@ -477,7 +477,7 @@ const movies = [
       'Quentin Tarantino',
       '2h 45min',
       ['Drama', 'Western'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'The Shining',
@@ -485,7 +485,7 @@ const movies = [
       'Stanley Kubrick',
       '2h 26min',
       ['Drama', 'Horror'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'WALL·E',
@@ -493,7 +493,7 @@ const movies = [
       'Andrew Stanton',
       '1h 38min',
       ['Animation', 'Adventure', 'Family', 'Sci-Fi'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'American Beauty',
@@ -501,7 +501,7 @@ const movies = [
       'Sam Mendes',
       '2h 2min',
       ['Drama', 'Romance'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'The Dark Knight Rises',
@@ -509,7 +509,7 @@ const movies = [
       'Christopher Nolan',
       '2h 44min',
       ['Action', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Mononoke-hime',
@@ -517,7 +517,7 @@ const movies = [
       'Hayao Miyazaki',
       '2h 14min',
       ['Animation', 'Adventure', 'Fantasy'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Oldeuboi',
@@ -525,7 +525,7 @@ const movies = [
       'Chan-wook Park',
       '2h',
       ['Action', 'Drama', 'Mystery', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Aliens',
@@ -533,7 +533,7 @@ const movies = [
       'James Cameron',
       '2h 17min',
       ['Action', 'Adventure', 'Sci-Fi', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Witness for the Prosecution',
@@ -541,7 +541,7 @@ const movies = [
       'Billy Wilder',
       '1h 56min',
       ['Crime', 'Drama', 'Mystery', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Once Upon a Time in America',
@@ -549,7 +549,7 @@ const movies = [
       'Sergio Leone',
       '3h 49min',
       ['Crime', 'Drama'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Das Boot',
@@ -557,7 +557,7 @@ const movies = [
       'Wolfgang Petersen',
       '2h 29min',
       ['Adventure', 'Drama', 'Thriller', 'War'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Citizen Kane',
@@ -565,7 +565,7 @@ const movies = [
       'Orson Welles',
       '1h 59min',
       ['Drama', 'Mystery'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Dangal',
@@ -573,7 +573,7 @@ const movies = [
       'Nitesh Tiwari',
       '2h 41min',
       ['Action', 'Biography', 'Drama', 'Sport'],
-      '8.6'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Vertigo',
@@ -581,7 +581,7 @@ const movies = [
       'Alfred Hitchcock',
       '2h 8min',
       ['Mystery', 'Romance', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'North by Northwest',
@@ -589,7 +589,7 @@ const movies = [
       'Alfred Hitchcock',
       '2h 16min',
       ['Action', 'Adventure', 'Mystery', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Star Wars: Episode VI - Return of the Jedi',
@@ -597,7 +597,7 @@ const movies = [
       'Richard Marquand',
       '2h 11min',
       ['Action', 'Adventure', 'Fantasy', 'Sci-Fi'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Braveheart',
@@ -605,7 +605,7 @@ const movies = [
       'Mel Gibson',
       '2h 58min',
       ['Biography', 'Drama', 'History', 'War'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Reservoir Dogs',
@@ -613,7 +613,7 @@ const movies = [
       'Quentin Tarantino',
       '1h 39min',
       ['Crime', 'Drama', 'Thriller'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'M',
@@ -621,7 +621,7 @@ const movies = [
       'Fritz Lang',
       '1h 57min',
       ['Crime', 'Drama', 'Mystery', 'Thriller'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Requiem for a Dream',
@@ -629,7 +629,7 @@ const movies = [
       'Darren Aronofsky',
       '1h 42min',
       ['Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Le fabuleux destin d\'Amélie Poulain',
@@ -637,7 +637,7 @@ const movies = [
       'Jean-Pierre Jeunet',
       '2h 2min',
       ['Comedy', 'Romance'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Taare Zameen Par',
@@ -645,7 +645,7 @@ const movies = [
       'Aamir Khan',
       '2h 45min',
       ['Drama', 'Family'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'A Clockwork Orange',
@@ -653,7 +653,7 @@ const movies = [
       'Stanley Kubrick',
       '2h 16min',
       ['Crime', 'Drama', 'Sci-Fi'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Kimi no na wa.',
@@ -661,7 +661,7 @@ const movies = [
       'Makoto Shinkai',
       '1h 46min',
       ['Animation', 'Drama', 'Fantasy', 'Romance'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Lawrence of Arabia',
@@ -669,7 +669,7 @@ const movies = [
       'David Lean',
       '3h 36min',
       ['Adventure', 'Biography', 'Drama', 'History', 'War'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Double Indemnity',
@@ -677,7 +677,7 @@ const movies = [
       'Billy Wilder',
       '1h 47min',
       ['Crime', 'Drama', 'Film-Noir', 'Mystery', 'Thriller'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Amadeus',
@@ -685,7 +685,7 @@ const movies = [
       'Milos Forman',
       '2h 40min',
       ['Biography', 'Drama', 'History', 'Music'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Eternal Sunshine of the Spotless Mind',
@@ -693,7 +693,7 @@ const movies = [
       'Michel Gondry',
       '1h 48min',
       ['Drama', 'Romance', 'Sci-Fi'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Taxi Driver',
@@ -701,7 +701,7 @@ const movies = [
       'Martin Scorsese',
       '1h 53min',
       ['Crime', 'Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'To Kill a Mockingbird',
@@ -709,7 +709,7 @@ const movies = [
       'Robert Mulligan',
       '2h 9min',
       ['Crime', 'Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Dunkirk',
@@ -717,7 +717,7 @@ const movies = [
       'Christopher Nolan',
       '1h 46min',
       ['Action', 'Drama', 'History', 'Thriller', 'War'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Full Metal Jacket',
@@ -725,7 +725,7 @@ const movies = [
       'Stanley Kubrick',
       '1h 56min',
       ['Drama', 'War'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       '2001: A Space Odyssey',
@@ -733,7 +733,7 @@ const movies = [
       'Stanley Kubrick',
       '2h 29min',
       ['Adventure', 'Sci-Fi'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Singin\' in the Rain',
@@ -741,7 +741,7 @@ const movies = [
       'Stanley Donen',
       '1h 43min',
       ['Comedy', 'Musical', 'Romance'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Toy Story 3',
@@ -749,7 +749,7 @@ const movies = [
       'Lee Unkrich',
       '1h 43min',
       ['Animation', 'Adventure', 'Comedy', 'Family', 'Fantasy'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Toy Story',
@@ -757,7 +757,7 @@ const movies = [
       'John Lasseter',
       '1h 21min',
       ['Animation', 'Adventure', 'Comedy', 'Family', 'Fantasy'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'The Sting',
@@ -765,7 +765,7 @@ const movies = [
       'George Roy Hill',
       '2h 9min',
       ['Comedy', 'Crime', 'Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       '3 Idiots',
@@ -773,7 +773,7 @@ const movies = [
       'Rajkumar Hirani',
       '2h 50min',
       ['Adventure', 'Comedy', 'Drama', 'Romance'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Ladri di biciclette',
@@ -781,7 +781,7 @@ const movies = [
       'Vittorio De Sica',
       '1h 29min',
       ['Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Inglourious Basterds',
@@ -789,7 +789,7 @@ const movies = [
       'Quentin Tarantino',
       '2h 33min',
       ['Adventure', 'Drama', 'War'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'The Kid',
@@ -797,7 +797,7 @@ const movies = [
       'Charles Chaplin',
       '1h 8min',
       ['Comedy', 'Drama', 'Family'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Snatch',
@@ -805,7 +805,7 @@ const movies = [
       'Guy Ritchie',
       '1h 44min',
       ['Comedy', 'Crime'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Monty Python and the Holy Grail',
@@ -813,7 +813,7 @@ const movies = [
       'Terry Gilliam',
       '1h 31min',
       ['Adventure', 'Comedy', 'Fantasy'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Good Will Hunting',
@@ -821,7 +821,7 @@ const movies = [
       'Gus Van Sant',
       '2h 6min',
       ['Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Jagten',
@@ -829,7 +829,7 @@ const movies = [
       'Thomas Vinterberg',
       '1h 55min',
       ['Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Per qualche dollaro in più',
@@ -837,7 +837,7 @@ const movies = [
       'Sergio Leone',
       '2h 12min',
       ['Western'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'L.A. Confidential',
@@ -845,7 +845,7 @@ const movies = [
       'Curtis Hanson',
       '2h 18min',
       ['Crime', 'Drama', 'Mystery', 'Thriller'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Scarface',
@@ -853,7 +853,7 @@ const movies = [
       'Brian De Palma',
       '2h 50min',
       ['Crime', 'Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'The Apartment',
@@ -861,7 +861,7 @@ const movies = [
       'Billy Wilder',
       '2h 5min',
       ['Comedy', 'Drama', 'Romance'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Metropolis',
@@ -869,7 +869,7 @@ const movies = [
       'Fritz Lang',
       '2h 33min',
       ['Drama', 'Sci-Fi'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Jodaeiye Nader az Simin',
@@ -877,7 +877,7 @@ const movies = [
       'Asghar Farhadi',
       '2h 3min',
       ['Drama', 'Mystery'],
-      '8.4'
+      '8.4⭐️⭐️⭐️'
   ],
   [
       'Rashômon',
@@ -885,7 +885,7 @@ const movies = [
       'Akira Kurosawa',
       '1h 28min',
       ['Crime', 'Drama', 'Mystery'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Indiana Jones and the Last Crusade',
@@ -893,7 +893,7 @@ const movies = [
       'Steven Spielberg',
       '2h 7min',
       ['Action', 'Adventure', 'Fantasy'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'All About Eve',
@@ -901,7 +901,7 @@ const movies = [
       'Joseph L. Mankiewicz',
       '2h 18min',
       ['Drama'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Yôjinbô',
@@ -909,7 +909,7 @@ const movies = [
       'Akira Kurosawa',
       '1h 50min',
       ['Action', 'Drama', 'Thriller'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Babam ve Oglum',
@@ -917,7 +917,7 @@ const movies = [
       'Çagan Irmak',
       '1h 48min',
       ['Drama'],
-      '8.5'
+      '8.5⭐️⭐️⭐️'
   ],
   [
       'Up',
@@ -925,7 +925,7 @@ const movies = [
       'Pete Docter',
       '1h 36min',
       ['Animation', 'Adventure', 'Comedy', 'Family'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Batman Begins',
@@ -933,7 +933,7 @@ const movies = [
       'Christopher Nolan',
       '2h 32min',
       ['Action', 'Adventure', 'Thriller'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Some Like It Hot',
@@ -941,7 +941,7 @@ const movies = [
       'Billy Wilder',
       '2h 1min',
       ['Comedy', 'Romance'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'The Treasure of the Sierra Madre',
@@ -949,7 +949,7 @@ const movies = [
       'John Huston',
       '2h 6min',
       ['Adventure', 'Drama', 'Western'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ],
   [
       'Unforgiven',
@@ -957,7 +957,7 @@ const movies = [
       'Clint Eastwood',
       '2h 10min',
       ['Drama', 'Western'],
-      '8.2'
+      '8.2⭐️⭐️'
   ],
   [
       'Der Untergang',
@@ -965,7 +965,7 @@ const movies = [
       'Oliver Hirschbiegel',
       '2h 36min',
       ['Biography', 'Drama', 'History', 'War'],
-      '8.2'
+      '8.2⭐️⭐️'
   ],
   [
       'Die Hard',
@@ -973,7 +973,7 @@ const movies = [
       'John McTiernan',
       '2h 11min',
       ['Action', 'Thriller'],
-      '8.2'
+      '8.2⭐️⭐️'
   ],
   [
       'Raging Bull',
@@ -981,7 +981,7 @@ const movies = [
       'Martin Scorsese',
       '2h 9min',
       ['Biography', 'Drama', 'Sport'],
-      '8.2'
+      '8.2⭐️⭐️'
   ],
   [
       'Heat',
@@ -989,7 +989,7 @@ const movies = [
       'Michael Mann',
       '2h 50min',
       ['Action', 'Crime', 'Drama', 'Thriller'],
-      '8.2'
+      '8.2⭐️⭐️'
   ],
   [
       'The Third Man',
@@ -997,6 +997,6 @@ const movies = [
       'Carol Reed',
       '1h 44min',
       ['Film-Noir', 'Mystery', 'Thriller'],
-      '8.3'
+      '8.3⭐️⭐️⭐️'
   ]
 ];

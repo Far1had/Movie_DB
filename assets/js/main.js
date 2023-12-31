@@ -12,7 +12,7 @@ function renderMovies(movieArray) {
     movieOutput.innerHTML = '';
     movieArray.forEach(movie => {
         const [title, year, director, duration, genres, rating] = movie;
-        
+
         // Überprüfe, ob das genres-Array vorhanden ist, bevor du darauf zugreifst
         const genresText = genres ? genres.join(', ') : 'N/A';
 
@@ -20,12 +20,18 @@ function renderMovies(movieArray) {
         movieElement.classList.add('movieOutput');
 
         movieElement.innerHTML = `
-            <h2>${title}</h2>
+       <div class="outdiv1"> <span>📀📀📀📀📀📀</span>
+        <h2 class="outDiv">${title}</h2>
             <p>Year: ${year}</p> 
             <h4>Director: ${director}</h4>
             <p>Duration: ${duration}</p>
             <p>Genres: ${genresText}</p>
             <p>Rating: ${rating}</p>
+            <div class="outdiv3"><div class="outdiv2"><p class="outP">▶️</p></div></div>
+        </div>
+
+
+
         `;
 
         movieOutput.appendChild(movieElement);
